@@ -77,7 +77,7 @@ function Login({ setIsLoggedIn }) {
               </div>
               <div className="forget-password">
                 <label>
-                  <Link to="/forgetPassword">Forget Password</Link>
+                  <Link to="/forgetPassword">Forgot Password</Link>
                 </label>
               </div>
 
