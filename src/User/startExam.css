@@ -1,0 +1,112 @@
+.single-question-wrapper{
+    margin:80px 30px;
+    box-shadow: 0 2px 4px rgb(103, 103, 220);
+    padding: 20px;
+    border-radius: 40px;
+}
+.single-question{
+  display: flex;
+  justify-content: space-between;
+}
+.list-wrapper{
+    display: flex;
+   align-items: center;
+}
+.list-wrapper div{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(180, 197, 212);
+    text-align: center;
+    border-radius: 4px;
+
+}
+.list-item {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .list-item.active {
+    font-weight: bold;
+    color: blue;
+  }
+  .list-item.answered {
+    background-color: rgb(65, 179, 65); /* Background color when answered */
+    color: white; /* Text color when answered */
+  }
+  .complete-exam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .complete-exam h1 {
+    margin-bottom: 20px;
+  }
+  
+  .complete-exam h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+@media (max-width: 600px) {
+  .complete-exam {
+    padding: 10px; /* Reduce padding on small screens */
+  }
+
+  .complete-exam h1 {
+    font-size: 1.5em; /* Smaller font size for small screens */
+    margin: 0;
+  }
+
+  .complete-exam h3 {
+    font-size: 1.2em; /* Smaller font size for small screens */
+  }
+}
+
+/* Media query for medium screens (up to 900px) */
+@media (max-width: 900px) {
+  .complete-exam h1 {
+    font-size: 1.75em; /* Adjust font size for medium screens */
+  }
+
+  .complete-exam h3 {
+    font-size: 1.4em; /* Adjust font size for medium screens */
+  }
+}
+
+  
+  
+  @media (max-width: 768px) {
+    .single-question-wrapper {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+    .single-question {
+      display: block;
+  }
+  .update-btn {
+    flex-direction: column;
+    gap: 5px;
+}
+
+  }
+  @media (max-width: 480px) {
+    .single-question-wrapper {
+        margin: 20px;
+        padding: 8px;
+    }
+
+    .btn-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .list-wrapper div {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+}

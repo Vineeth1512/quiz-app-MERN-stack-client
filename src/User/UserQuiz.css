@@ -1,0 +1,116 @@
+/* Base Styles */
+.welcome-user-home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #fff; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.btn-wrap {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.wel-wrap h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.wel-wrap button {
+    border: none;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wel-wrap button:hover {
+    background-color: #555;
+}
+
+.wel-wrap button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.user-name {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .welcome-user-home-page {
+        flex-direction: row;
+    }
+
+    .content-wrapper,
+    .image-wrapper {
+        width: 50%;
+    }
+
+    .content-wrapper {
+        padding: 40px;
+    }
+
+    .wel-wrap h1 {
+        font-size: 36px;
+    }
+
+    .wel-wrap button {
+        padding: 12px 24px;
+    }
+
+    .wel-wrap button a {
+        font-size: 18px;
+    }
+
+    .user-name {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-wrapper {
+        padding: 60px;
+    }
+
+    .wel-wrap h1 {
+        font-size: 40px;
+    }
+
+    .wel-wrap button {
+        padding: 14px 28px;
+    }
+
+    .wel-wrap button a {
+        font-size: 20px;
+    }
+
+    .user-name {
+        font-size: 36px;
+    }
+}
